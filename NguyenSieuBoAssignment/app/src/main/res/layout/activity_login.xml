@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context="com.assignment1.bo.nguyensieuboassignment.LoginActivity">
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="63dp"
+        android:layout_y="309dp"
+        android:fontFamily="casual"
+        android:text="Confirmation Checkbox"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/genderview" />
+
+    <TextView
+        android:id="@+id/loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="198dp"
+        android:layout_y="10dp"
+        android:fontFamily="casual"
+        android:text="Login Page"
+        android:textColor="#ff0000"
+        android:textSize="120px"
+        android:textStyle="bold"
+        android:layout_above="@+id/Username"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="143dp"
+        android:layout_y="82dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/Email"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="147dp"
+        android:layout_y="147dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="usermail@gmail.com"
+        android:inputType="textEmailAddress"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/Username" />
+
+    <TextView
+        android:id="@+id/genderview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="175dp"
+        android:layout_y="221dp"
+        android:fontFamily="casual"
+        android:text="Gender"
+        android:layout_marginStart="13dp"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_alignStart="@+id/Email" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="278dp"
+        android:layout_y="216dp"
+        android:entries="@array/spinner"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/Email"
+        android:layout_alignEnd="@+id/Email" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="233dp"
+        android:layout_y="251dp"
+        android:enabled="false"
+        android:fontFamily="casual"
+        android:onClick="Loginacivity"
+        android:text="Login"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

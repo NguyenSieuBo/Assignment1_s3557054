@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.assignment1.bo.nguyensieuboassignment.LoadingDataActivity">
+
+    <TextView
+        android:id="@+id/UsernameInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Login UserName is:"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="127dp"
+        android:layout_alignBaseline="@+id/loadUserName"
+        android:layout_alignBottom="@+id/loadUserName"
+        android:layout_alignEnd="@+id/UseremailInfor" />
+
+    <TextView
+        android:id="@+id/loadUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteY="60dp"
+        tools:layout_editor_absoluteX="81dp"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/buttonload"
+        android:textColor="#ff0000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/loadUserMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteY="127dp"
+        tools:layout_editor_absoluteX="201dp"
+        android:layout_alignBaseline="@+id/UseremailInfor"
+        android:layout_alignBottom="@+id/UseremailInfor"
+        android:layout_alignStart="@+id/loadUserName"
+        android:textColor="#ff0000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/UseremailInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Login UserEmail is:"
+        tools:layout_editor_absoluteY="60dp"
+        tools:layout_editor_absoluteX="201dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginStart="13dp"
+        android:layout_below="@+id/UsernameInfor"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/togglebuttonview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Button: You Chose"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/UsernameInfor" />
+
+    <TextView
+        android:id="@+id/togglebuttonload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/autocompleteload"
+        android:textColor="#ff0000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/autocomplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Suggestion Text: You Chose"
+        android:layout_above="@+id/togglebuttonview"
+        android:layout_alignStart="@+id/UseremailInfor"
+        android:layout_marginBottom="49dp" />
+
+    <TextView
+        android:id="@+id/autocompleteload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/autocomplete"
+        android:layout_alignBottom="@+id/autocomplete"
+        android:layout_alignStart="@+id/loadUserMail"
+        android:textColor="#ff0000"
+        android:textStyle="bold"/>
+
+
+
+    <Button
+        android:id="@+id/buttonload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Data"
+        tools:layout_editor_absoluteY="193dp"
+        tools:layout_editor_absoluteX="148dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="106dp" />
+</RelativeLayout>

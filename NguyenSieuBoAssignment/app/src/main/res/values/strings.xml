@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NguyenSieuBo App </string>
+    <string-array name="spinner">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="autocomplete_array">
+        <item>Chicken</item>
+        <item>Coconut</item>
+        <item>Apple</item>
+        <item>Android</item>
+        <item>Butter</item>
+        <item>Beef</item>
+        <item>Pineapple</item>
+        <item>Peanut</item>
+        <item>Yogurt</item>
+        <item>Shrimp</item>
+        <item>Water</item>
+        <item>Donut</item>
+    </string-array>
+</resources>
